@@ -13,7 +13,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /* color: #aeaeae; */
+    color: #595958;
 }
+
+/*************** MOBILE ***************/
 
 /* HEADER */
 
@@ -30,6 +34,7 @@ header {
 header h1 {
     font-family: 'blowbrush';
     font-weight: 100;
+    color: black;
 }
 
 header label #icone-menu {
@@ -99,22 +104,38 @@ main {
 
 /* BANNER */
 
-main section#banner h2 {
-    display: none;
-}
-
-main section#banner figure {
+main section#banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    overflow: hidden;
+}
+
+main section#banner figure {
+    position: relative;
+    width: 304px;
+    height: 171px;
 }
 
 main section#banner figure img {
-    width: 100%;
-    /* border-radius: 10px; */
+    width: 304px;
+    height: 171px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
+}
+
+main section#banner figure legend h1 {
+    position: absolute;
+    top: calc(50% - (2rem / 2));
+    left: 0;
+    height: 45px;
+    font-size: 41px;
+    font-weight: bold;
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+main section#banner h2 {
+    display: none;
 }
 
 /* COMO CONTRATAR */
@@ -125,12 +146,14 @@ main section#como-contratar {
     justify-content: space-between;
     width: 100%;
     margin-top: 30px;
+    color: #595958;
     /* background-color: cyan; */
 }
 
 main section#como-contratar article {
     width: 100%;
     height: 150px;
+    margin-bottom: 10px;
     padding: 15px 15px;
     background-color: #e9e9e9;
     /* border-radius: 10px; */
@@ -139,6 +162,7 @@ main section#como-contratar article {
 
 main section#como-contratar article h2 {
     font-size: 1rem;
+    font-weight: normal;
 }
 
 main section#como-contratar article p {
@@ -146,13 +170,287 @@ main section#como-contratar article p {
     margin-top: 25px;
 }
 
-main section#como-contratar iframe {
+main section#como-contratar #video-contratar p {
+    margin: 20px 0 30px 0;
+    padding: 0 10px;
+}
+
+main section#como-contratar #video-contratar iframe {
     width: 100%;
     height: 175px;
     margin-top: 30px;
-    /* border-radius: 10px; */
     box-shadow: 0px 0px 6px rgba(0, 0, 0, .6);
 }
+
+/* **************** SLIDE SHOW ******************* */
+
+main section#trabalhos, main section#depoimentos {
+    background-color: #e9e9e9;
+    color: grey;
+    padding: 10px;
+}
+
+main section#trabalhos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section#trabalhos h2, main section#depoimentos h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+main section#trabalhos p, main section#depoimentos p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+main section#grafiteiro-profissional {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+main section#grafiteiro-profissional h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+main section#grafiteiro-profissional p {
+    margin-bottom: 20px;
+}
+
+main section#grafiteiro-profissional ul {
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
+/* **************** ANTES E DEPOIS ******************* */
+
+main section#antes-depois {
+    background-image: linear-gradient(to bottom, white, #e0e0e0);
+}
+
+main section#antes-depois h2, main section#antes-depois figure legend {
+    display: none;
+}
+
+main section#antes-depois h3 {
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0;
+    color: black;
+}
+
+main section#antes-depois figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main section#antes-depois figure img {
+    width: 304px;
+}
+
+main section#antes-depois img {
+    width: 100%;
+}
+
+/* **************** PASSOS ******************* */
+
+main section.texto-informativo {
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+main section.texto-informativo h2, h3 {
+    font-size: 1rem;
+}
+
+main section.texto-informativo h2 {
+    margin-bottom: 20px;
+}
+
+main section.texto-informativo h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main section.texto-informativo p {
+    margin-bottom: 20px;
+}
+
+main section.texto-informativo figure {
+    width: 100%;
+}
+
+main section.texto-informativo figure img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+main section.texto-informativo a {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background-color: cyan;
+    color: #595958;
+    border-radius: 8px;
+}
+
+/* PRIMEIRA VEZ */
+
+main section#primeira-vez ol {
+    margin-bottom: 20px;
+}
+
+main section#primeira-vez ol li {
+    margin-left: 25px;
+}
+
+/* EBOOK */
+
+main section#ebook #form-box {
+    padding: 10px 30px 5px;
+    background-color: #e0e0e0;
+    border-radius: 15px 15px 0 0;
+}
+
+main section#ebook h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+}
+
+main section#ebook form {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #11fcfe, #a4e8f6, #cae3f4);
+    border-radius: 8px;
+}
+
+main section#ebook form h3 {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+main section#ebook form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: #595958;
+    outline: none;
+    border: none;
+}
+main section#ebook form button{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+    background-color: cyan;
+    font-size: 1.3rem;
+    color: #595958;
+    font-weight: 500;
+}
+main section#ebook figure img {
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+/* VISTORIA */
+main article#vistoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main article#vistoria img {
+    width: 80%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+main section.texto-informativo h4{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+main section.texto-informativo ol {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+main section.texto-informativo ol li {
+    
+    margin-bottom: 20px;
+}
+
+
+
+/* ***********ORÇAMENTO*************** */
+main section#ebook form {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #11fcfe, #a4e8f6, #cae3f4);
+    border-radius: 8px;
+}
+
+main section#ebook form h3 {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+main section#ebook form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    color: #595958;
+    outline: none;
+    border: none;
+}
+main section#ebook form button{
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+    background-color: cyan;
+    font-size: 1.3rem;
+    color: #595958;
+    font-weight: 500;
+}
+
+
+
+
+
+
 
 /* DÚVIDAS CONTATO */
 
@@ -180,13 +478,6 @@ main article#duvidas figure {
     height: 45px;
     border-radius: 50%;
     border: 2px solid cyan;
-}
-
-main section#trabalhos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
 }
 
 main article#duvidas i {
