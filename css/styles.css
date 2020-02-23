@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 @font-face {
-    font-family: roboto-normal;
-    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-family: 'blowbrush';
+    src: url('../assets/fonts/blowbrush/blowbrush.ttf');
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: 'roboto-normal', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER */
@@ -28,7 +28,8 @@ header {
 }
 
 header h1 {
-    font-family: 'Lobster', cursive;
+    font-family: 'blowbrush';
+    font-weight: 100;
 }
 
 header label #icone-menu {
@@ -39,7 +40,7 @@ header #abrir-menu {
     display: none;
 }
 
-header #abrir-menu:checked ~ nav {
+header #abrir-menu:checked~nav {
     left: 0;
     opacity: 1;
 }
@@ -48,16 +49,12 @@ header nav {
     position: fixed;
     top: 0;
     left: -100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 100%;
     height: 100%;
     padding: 25px 0 15px;
-
-    
     background-color: cyan;
     opacity: 0;
     z-index: 1;
@@ -75,11 +72,10 @@ header nav div i {
     font-size: 2rem;
     opacity: 0;
     transform: rotate(45deg);
-
-    transition: opacity 0.8s, transform .8s ;
+    transition: opacity 0.8s, transform .8s;
 }
 
-header #abrir-menu:checked ~ nav>div label i {
+header #abrir-menu:checked~nav>div label i {
     opacity: 1;
     transform: rotate(-45deg);
 }
@@ -164,7 +160,6 @@ main article#duvidas {
     position: fixed;
     bottom: 5px;
     right: 10px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,16 +182,12 @@ main article#duvidas figure {
     border: 2px solid cyan;
 }
 
-
-
-
 main section#trabalhos {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
 }
-
 
 main article#duvidas i {
     font-size: 0.9rem;
