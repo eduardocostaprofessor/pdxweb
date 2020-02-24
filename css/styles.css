@@ -13,7 +13,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* color: #aeaeae; */
+    /* color: black; */
     color: #595958;
 }
 
@@ -34,7 +34,7 @@ header {
 header h1 {
     font-family: 'blowbrush';
     font-weight: 100;
-    color: black;
+    color: #595958;
 }
 
 header label #icone-menu {
@@ -273,6 +273,7 @@ main section.texto-informativo {
 
 main section.texto-informativo h2, h3 {
     font-size: 1rem;
+    text-align: center;
 }
 
 main section.texto-informativo h2 {
@@ -689,16 +690,13 @@ main article#duvidas i {
         justify-content: space-between;
         margin-top: 40px;
     }
-
     main section#antes-depois div {
         width: 50%;
     }
-
     main section#antes-depois>img {
         height: 100px;
         margin-top: 20px;
     }
-
     /* TEXTOS INFORMATIVOS */
     main section.texto-informativo p,
     main section.texto-informativo h2,
@@ -708,7 +706,27 @@ main article#duvidas i {
     main section.texto-informativo em {
         font-size: 1.3rem;
     }
+    main section.texto-informativo figure img {
+        width: 350px;
+     
+        margin: 50px auto;
+    }
+    /* EBOOK FORM */
+    main section#ebook #form-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    main section#ebook #form-box h2 { font-size: 1.3rem; }
 
+    main section#ebook #form-box form { width: 90%; }
+    main section#ebook #form-box form input, 
+    main section#ebook #form-box form button  {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    main section#ebook #form-box form button { font-size: 1.5rem; }
     /* VISTORIA ANTES E DEPOIS */
     main article#vistoria  {
         flex-direction: row;
@@ -719,7 +737,6 @@ main article#duvidas i {
     main article#vistoria img {
         width: 45%;
     }
-
     /* ORÇAMENTO */
     main section#orcamento h2 {
         font-size: 1.5rem;
@@ -727,7 +744,6 @@ main article#duvidas i {
     main section#orcamento P {
         font-size: 1.3rem;
     }
-
     main section#orcamento img {
         width: 65px;
         height: 65px;
@@ -739,16 +755,14 @@ main article#duvidas i {
     main section#orcamento i {
         font-size: 1.3rem;
     }
-
     main section#orcamento form {
         margin-top: 40px;
     }
-
     main section#orcamento form input {
         height: 60px;
         font-size: 1.3rem;
     }
-    main section#orcamento form textarea{
+    main section#orcamento form textarea {
         font-size: 1.3rem;
     }
 }
@@ -758,5 +772,44 @@ main article#duvidas i {
     #container {
         max-width: 992px;
         margin: 0 auto;
+    }
+    header {
+        position: static;
+        padding: 20px 0;
+        
+    }
+    header label  {
+        display: none;
+    }
+    header nav {
+        position: static;
+        opacity: 1;
+    
+    }
+    header nav  {
+        flex-direction: row;
+        width: 50%;
+        height: 50px;
+        padding: 0;
+        background-color: transparent;
+        border: 1px solid #595958;
+    }
+    header nav div {
+        display: none;
+    }
+    header nav ul{
+        position: static;
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: #595958;
+        width: 90%;
+        border: none;
+        padding: 0;
+        font-size: 1.4rem;
+        
     }
 }
