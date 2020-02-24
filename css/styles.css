@@ -73,7 +73,7 @@ header nav div {
 }
 
 header nav div i {
-    color: white;
+    color: #595958;
     font-size: 2rem;
     opacity: 0;
     transform: rotate(45deg);
@@ -87,9 +87,9 @@ header #abrir-menu:checked~nav>div label i {
 
 header nav a {
     text-decoration: none;
-    color: white;
+    color: #595958;
     width: 90%;
-    border-bottom: 2px dashed white;
+    border-bottom: 2px dashed #595958;
     padding: 25px;
     font-size: 1.8rem;
     text-align: center;
@@ -126,12 +126,10 @@ main section#banner figure legend h1 {
     position: absolute;
     top: calc(50% - (2rem / 2));
     left: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 45px;
-    
     background-color: white;
     font-size: 41px;
     font-weight: bold;
@@ -269,9 +267,6 @@ main section#antes-depois img {
 /* **************** PASSOS ******************* */
 
 main section.texto-informativo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 40px;
     padding: 0 10px;
 }
@@ -303,10 +298,17 @@ main section.texto-informativo figure img {
     margin: 0 auto;
 }
 
-main section.texto-informativo a {
-    display: inline-block;
+/* BOTÃO ORÇAMENTO */
+main section.texto-informativo div#botao-orcamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 10px;
+}
+main section.texto-informativo div a {
+    display: inline-block;
+    width: 100%;
     padding: 20px;
     font-size: 1.2rem;
     font-weight: 500;
@@ -623,11 +625,11 @@ main article#duvidas i {
     }
     /* Banner */
     main section#banner figure {
-        width: 560px;
+        width: 100%;
         height: 350px;
     }
     main section#banner figure img {
-        width: 560px;
+        width: 100%;
         height: 350px;
     }
     main section#banner figure legend h1 {
@@ -638,5 +640,123 @@ main article#duvidas i {
         height: 80px;
         font-size: 76px;
         background-color: white;
+    }
+    main section#como-contratar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section#como-contratar article {
+        width: 340px;
+        margin-bottom: 0;
+        height: 175px;
+        /* padding: 15px 15px; */
+    }
+    main section#como-contratar article h2 {
+        font-size: 1.3rem;
+    }
+    main section#como-contratar article p {
+        font-size: 1.1rem;
+    }
+    main section#como-contratar #video-contratar {
+        width: 340px;
+    }
+    main section#como-contratar #video-contratar iframe {
+        width: 340px;
+        height: 175px;
+        margin-top: 0;
+    }
+    main section#como-contratar #video-contratar p {
+        display: none;
+    }
+
+    /* TRABALHOS */
+    main section#trabalhos {
+        margin-top: 30px;
+    }
+    /* GRAFITEIRO PROFISSIONAL */
+    main section#grafiteiro-profissional h2 {
+        font-size: 1.5rem;
+    }
+    main section#grafiteiro-profissional p, 
+    main section#grafiteiro-profissional li {
+        font-size: 1.3rem;
+    }
+    /* ANTES E DEPOIS */
+    main section#antes-depois {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    main section#antes-depois div {
+        width: 50%;
+    }
+
+    main section#antes-depois>img {
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    /* TEXTOS INFORMATIVOS */
+    main section.texto-informativo p,
+    main section.texto-informativo h2,
+    main section.texto-informativo h3,
+    main section.texto-informativo h4,
+    main section.texto-informativo ol,
+    main section.texto-informativo em {
+        font-size: 1.3rem;
+    }
+
+    /* VISTORIA ANTES E DEPOIS */
+    main article#vistoria  {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+    main article#vistoria img {
+        width: 45%;
+    }
+
+    /* ORÇAMENTO */
+    main section#orcamento h2 {
+        font-size: 1.5rem;
+    }
+    main section#orcamento P {
+        font-size: 1.3rem;
+    }
+
+    main section#orcamento img {
+        width: 65px;
+        height: 65px;
+    }
+    main section#orcamento figure {
+        width: 65px;
+        height: 65px;
+    }
+    main section#orcamento i {
+        font-size: 1.3rem;
+    }
+
+    main section#orcamento form {
+        margin-top: 40px;
+    }
+
+    main section#orcamento form input {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    main section#orcamento form textarea{
+        font-size: 1.3rem;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    #container {
+        max-width: 992px;
+        margin: 0 auto;
     }
 }
