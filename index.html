@@ -148,7 +148,7 @@
                 <img src="./images/passos-ilustracao.png" alt="Ilustração Passos" title="Passos">
             </figure>
 
-            <a href="#orcamento" id="botao-orcamento">Solicitar um orçamento</a>
+            <a href="#orcamento" id="botao-orcamento" class="animacao-botao">Solicitar um orçamento</a>
         </section>
 
         <!--*************************** GRAFTITE TOP ***************************-->
@@ -279,36 +279,33 @@
 
 
 
-
-        <!-- <section id="orcamento">
+        <!-- *************************ORÇAMENTO************************* -->
+        <section id="orcamento">
             <h2>Ainda com dúvidas?</h2>
 
-            <p>Então você <br> pode chamar no Whats</p>
+            <p>Então você pode chamar no Whats</p>
             <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511983504952" target="_blank">
                 <img src="./assets/whatsapp-logo.png" alt="contato-whatsapp" title="Tire suas dúvidas pelo whatsapp">
             </a>
+            
             <p>Se preferir ligue</p>
-
-
-
-
-            <p>Ou deixe seu contato <br> que nós retornaremos</p>
             <figure>
                 <a href="tel:+55-11-98350-4952" target="_blank">
                     <i class="fas fa-phone"></i>
                 </a>
             </figure>
-
-
-
-
-            <form action="" method="POST">
-                <h3>É só preencher o formulário abaixo para acessar</h3>
+            
+            <p>Ou deixe seu contato que nós retornaremos</p>
+            <form action="" method="POST" id="frm-orcamento">
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
                 <input type="email" id="email" name="email" placeholder="Email" required>
-                <button type="submit" id="submit" name="submit">Baixar o ebook aqui</button>
+                <input type="number" id="telefone" name="telefone" placeholder="Telefone" required>
+                <input type="text" id="cidade" name="cidade" placeholder="Loaclizacao" required>
+                <textarea name="mensgem" id="mensgem" cols="30" rows="10"></textarea>
+
+                <button class="animacao-botao" type="submit" id="enviar-orcamento" name="enviar-orcamento">Enviar Orçamento</button>
             </form>
-        </section> -->
+        </section>
 
 
 
@@ -319,7 +316,7 @@
 
 
         <!--**************** Botões de contato ****************-->
-        <article id="duvidas">
+        <!-- <article id="duvidas">
             <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5511983504952" target="_blank">
                 <img src="./assets/whatsapp-logo.png" alt="contato-whatsapp" title="Tire suas dúvidas pelo whatsapp">
             </a>
@@ -330,7 +327,7 @@
             </figure>
         </article>
 
-    </main>
+    </main> -->
 </body>
 
 </html>
