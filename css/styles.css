@@ -189,6 +189,48 @@ main section#trabalhos, main section#depoimentos {
     color: grey;
     padding: 10px;
 }
+main section .carousel {
+    padding: 15px 0 0 0 ;
+    width: 70%;
+    margin: 0 auto;
+}
+main section#trabalhos .slick-dots li button:before{
+    opacity: 0.15;
+    color: black;
+    font-size: 8px;
+}
+main section#trabalhos .slick-dots li.slick-active button:before{
+    color: cyan;
+    opacity: 0.85;
+    font-size: 8px;
+} 
+main section#trabalhos a#galeria, main section#trabalhos a#grafiteorcamento  {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    background-color: cyan;
+    color: #595958;
+    border-radius: 8px;
+}
+
+main section#trabalhos a#grafites {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #595958;
+    border-radius: 8px;
+    border: cyan 1px solid
+}
 
 main section#trabalhos {
     display: flex;
