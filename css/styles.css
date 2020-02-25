@@ -13,7 +13,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* color: #aeaeae; */
+    /* color: black; */
     color: #595958;
 }
 
@@ -34,7 +34,7 @@ header {
 header h1 {
     font-family: 'blowbrush';
     font-weight: 100;
-    color: black;
+    color: #595958;
 }
 
 header label #icone-menu {
@@ -73,7 +73,7 @@ header nav div {
 }
 
 header nav div i {
-    color: white;
+    color: #595958;
     font-size: 2rem;
     opacity: 0;
     transform: rotate(45deg);
@@ -87,9 +87,9 @@ header #abrir-menu:checked~nav>div label i {
 
 header nav a {
     text-decoration: none;
-    color: white;
+    color: #595958;
     width: 90%;
-    border-bottom: 2px dashed white;
+    border-bottom: 2px dashed #595958;
     padding: 25px;
     font-size: 1.8rem;
     text-align: center;
@@ -98,8 +98,8 @@ header nav a {
 /************************ MAIN ************************/
 
 main {
-    padding: 0 8px;
-    margin-top: 20px;
+    padding: 20px 8px;
+    /* margin-top: 20px; */
 }
 
 /* BANNER */
@@ -126,12 +126,15 @@ main section#banner figure legend h1 {
     position: absolute;
     top: calc(50% - (2rem / 2));
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 45px;
+    background-color: white;
     font-size: 41px;
     font-weight: bold;
-    width: 100%;
-    /* border: 1px solid red; */
     text-align: center;
+    width: 100%;
 }
 
 main section#banner h2 {
@@ -326,6 +329,7 @@ main section.texto-informativo {
 
 main section.texto-informativo h2, h3 {
     font-size: 1rem;
+    text-align: center;
 }
 
 main section.texto-informativo h2 {
@@ -351,10 +355,17 @@ main section.texto-informativo figure img {
     margin: 0 auto;
 }
 
-main section.texto-informativo a {
-    display: inline-block;
+/* BOTÃO ORÇAMENTO */
+main section.texto-informativo div#botao-orcamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 10px;
+}
+main section.texto-informativo div a {
+    display: inline-block;
+    width: 100%;
     padding: 20px;
     font-size: 1.2rem;
     font-weight: 500;
@@ -404,6 +415,7 @@ main section#ebook form h3 {
     font-weight: 500;
     margin-bottom: 30px;
 }
+
 main section#ebook form input {
     width: 100%;
     height: 50px;
@@ -414,7 +426,8 @@ main section#ebook form input {
     outline: none;
     border: none;
 }
-main section#ebook form button{
+
+main section#ebook form button {
     position: absolute;
     bottom: -50px;
     left: 0;
@@ -427,43 +440,45 @@ main section#ebook form button{
     color: #595958;
     font-weight: 500;
 }
+
 main section#ebook figure img {
     margin-top: 25px;
     width: 100%;
 }
 
-
 /* VISTORIA */
+
 main article#vistoria {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 main article#vistoria img {
     width: 80%;
     display: block;
     margin-bottom: 15px;
 }
 
-main section.texto-informativo h4{
+main section.texto-informativo h4 {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 20px;
 }
+
 main section.texto-informativo ol {
     margin-left: 15px;
     margin-top: 15px;
     margin-bottom: 20px;
 }
+
 main section.texto-informativo ol li {
-    
     margin-bottom: 20px;
 }
 
+/* ***********EBOOK*************** */
 
-
-/* ***********ORÇAMENTO*************** */
 main section#ebook form {
     position: relative;
     margin-bottom: 10px;
@@ -478,6 +493,7 @@ main section#ebook form h3 {
     font-weight: 500;
     margin-bottom: 30px;
 }
+
 main section#ebook form input {
     width: 100%;
     height: 50px;
@@ -488,7 +504,8 @@ main section#ebook form input {
     outline: none;
     border: none;
 }
-main section#ebook form button{
+
+main section#ebook form button {
     position: absolute;
     bottom: -50px;
     left: 0;
@@ -502,11 +519,116 @@ main section#ebook form button{
     font-weight: 500;
 }
 
+/* ***********ORÇAMENTO*************** */
 
+main section#orcamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    /* border: 1px solid red; */
+}
 
+main section#orcamento h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
 
+main section#orcamento p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 50%;
+    /* border: 1px solid red; */
+}
 
+main section#orcamento img {
+    width: 45px;
+    height: 45px;
+}
 
+main section#orcamento figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid cyan;
+}
+
+main section#orcamento i {
+    font-size: 0.9rem;
+    color: cyan;
+}
+
+main section#orcamento form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 15px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+main section#orcamento form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #595958;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+main section#orcamento form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #595958;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+main section#orcamento form button {
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+    background-color: cyan;
+    font-size: 1.3rem;
+    color: #595958;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.animacao-botao {
+    animation-name: piscar;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes piscar {
+    0% {
+        color: #595958;
+    }
+    50% {
+        color: #a0a09c;
+        width: 80%;
+    }
+    95% {
+        background-color: cyan;
+    }
+}
 
 /* DÚVIDAS CONTATO */
 
@@ -539,4 +661,240 @@ main article#duvidas figure {
 main article#duvidas i {
     font-size: 0.9rem;
     color: cyan;
+}
+
+/*************** TABLET ***************/
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 20px 20px;
+    }
+    header h1 {
+        font-size: 3.5rem;
+    }
+    header label #icone-menu {
+        width: 40px;
+    }
+    /* MAIN */
+    main {
+        margin-top: 20px;
+        padding: 20px 20px;
+    }
+    /* Banner */
+    main section#banner figure {
+        width: 100%;
+        height: 350px;
+    }
+    main section#banner figure img {
+        width: 100%;
+        height: 350px;
+    }
+    main section#banner figure legend h1 {
+        top: calc(50% - (80px / 2));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        font-size: 76px;
+        background-color: white;
+    }
+    main section#como-contratar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    main section#como-contratar article {
+        width: 340px;
+        margin-bottom: 0;
+        height: 175px;
+        /* padding: 15px 15px; */
+    }
+    main section#como-contratar article h2 {
+        font-size: 1.3rem;
+    }
+    main section#como-contratar article p {
+        font-size: 1.1rem;
+    }
+    main section#como-contratar #video-contratar {
+        width: 340px;
+    }
+    main section#como-contratar #video-contratar iframe {
+        width: 340px;
+        height: 175px;
+        margin-top: 0;
+    }
+    main section#como-contratar #video-contratar p {
+        font-size: 1.3rem;
+        /* display: none; */
+    }
+
+    /* TRABALHOS */
+    main section#trabalhos {
+        margin-top: 30px;
+    }
+    /* GRAFITEIRO PROFISSIONAL */
+    main section#grafiteiro-profissional{
+        margin-top: 40px;
+    }
+    main section#grafiteiro-profissional h2 {
+        font-size: 1.5rem;
+    }
+    main section#grafiteiro-profissional p, 
+    main section#grafiteiro-profissional li {
+        font-size: 1.3rem;
+    }
+    /* ANTES E DEPOIS */
+    main section#antes-depois {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    main section#antes-depois div {
+        width: 50%;
+    }
+    main section#antes-depois>img {
+        height: 100px;
+        margin-top: 20px;
+    }
+    /* TEXTOS INFORMATIVOS */
+    main section.texto-informativo p,
+    main section.texto-informativo h2,
+    main section.texto-informativo h3,
+    main section.texto-informativo h4,
+    main section.texto-informativo ol,
+    main section.texto-informativo em {
+        font-size: 1.3rem;
+    }
+    main section.texto-informativo figure img {
+        width: 350px;
+     
+        margin: 50px auto;
+    }
+    /* EBOOK FORM */
+    main section#ebook #form-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    main section#ebook #form-box h2 { font-size: 1.3rem; }
+
+    main section#ebook #form-box form { width: 90%; }
+    main section#ebook #form-box form input, 
+    main section#ebook #form-box form button  {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    main section#ebook #form-box form button { font-size: 1.5rem; }
+    /* VISTORIA ANTES E DEPOIS */
+    main article#vistoria  {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+    main article#vistoria img {
+        width: 45%;
+    }
+    /* ORÇAMENTO */
+    main section#orcamento h2 {
+        font-size: 1.5rem;
+    }
+    main section#orcamento P {
+        font-size: 1.3rem;
+    }
+    main section#orcamento img {
+        width: 65px;
+        height: 65px;
+    }
+    main section#orcamento figure {
+        width: 65px;
+        height: 65px;
+    }
+    main section#orcamento i {
+        font-size: 1.3rem;
+    }
+    main section#orcamento form {
+        margin-top: 40px;
+    }
+    main section#orcamento form input {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    main section#orcamento form textarea {
+        font-size: 1.3rem;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    #container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    header {
+        position: static;
+        padding: 20px 0;
+        
+    }
+    header label  {
+        display: none;
+    }
+    header nav {
+        position: static;
+        opacity: 1;
+    
+    }
+    header nav  {
+        flex-direction: row;
+        width: 50%;
+        height: 50px;
+        padding: 0;
+        background-color: transparent;
+        /* border: 1px solid #595958; */
+    }
+    header nav div {
+        display: none;
+    }
+    header nav ul{
+        position: static;
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    header nav a {
+        text-decoration: none;
+        color: #595958;
+        width: 90%;
+        border: none;
+        padding: 0;
+        font-size: 1.4rem;
+        
+    }
+
+    header nav a:hover {
+        color: cyan;
+    }
+    /* COMO CONTRATAR */
+    main section#como-contratar article {
+        width: 470px;
+        height: 190px;
+        padding: 15px 15px;
+    }
+    main section#como-contratar #video-contratar {
+        width: 470px;
+        /* height: 190px; */
+    }
+    main section#como-contratar #video-contratar iframe  {
+        width: 470px;
+        height: 190px;
+    }
+    main section#como-contratar #video-contratar p {
+        display: block;
+    }
+    /* ANTES E DEPOIS */
+    main section#antes-depois figure img {
+        width: 95%;
+    }
 }
