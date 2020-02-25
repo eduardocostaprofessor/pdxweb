@@ -553,26 +553,47 @@ main section#orcamento form button {
     opacity: 1;
     font-weight: 500;
 }
+#botao-orcamento a{
+    position: relative;
+}
 
-.animacao-botao {
-    animation-name: piscar;
+#botao-orcamento a div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 17px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 34px;
+    background-color: cyan;
+}
+.mudarexto1 {
+    animation-name: mudarexto1;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    z-index: 2;
+}
+.mudarexto2 {
+    animation-name: mudarexto2;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
 }
 
-@keyframes piscar {
-    0% {
-        color: #595958;
+@keyframes mudarexto1 {
+    from {
+        z-index: 1;
     }
-    50% {
-        color: #a0a09c;
-        width: 80%;
-    }
-    95% {
-        background-color: cyan;
+   
+    to {
+        z-index: 2;
     }
 }
+
+
 
 /* DÚVIDAS CONTATO */
 
@@ -773,14 +794,16 @@ main article#duvidas i {
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
+    h2, h3, h4, p, li {
+        font-size: 1.5rem !important;
+    }
     #container {
-        max-width: 1000px;
+        max-width: 992px;
         margin: 0 auto;
     }
     header {
         position: static;
         padding: 20px 0;
-        
     }
     header label  {
         display: none;
@@ -788,7 +811,6 @@ main article#duvidas i {
     header nav {
         position: static;
         opacity: 1;
-    
     }
     header nav  {
         flex-direction: row;
@@ -796,17 +818,13 @@ main article#duvidas i {
         height: 50px;
         padding: 0;
         background-color: transparent;
-        /* border: 1px solid #595958; */
     }
-    header nav div {
-        display: none;
-    }
+    header nav div { display: none; }
     header nav ul{
         position: static;
         font-size: 1rem;
         text-align: right;
     }
-
     header nav a {
         text-decoration: none;
         color: #595958;
@@ -814,31 +832,76 @@ main article#duvidas i {
         border: none;
         padding: 0;
         font-size: 1.4rem;
-        
     }
-
-    header nav a:hover {
-        color: cyan;
+    header nav a:hover { color: cyan; }
+    /* BANNER */
+    main section#banner figure {
+        width: 100%;
+        height: auto;
     }
+    main section#banner figure img {
+        width: 100%;
+        height: 450px;
+    }
+    
     /* COMO CONTRATAR */
     main section#como-contratar article {
         width: 470px;
         height: 190px;
         padding: 15px 15px;
     }
-    main section#como-contratar #video-contratar {
-        width: 470px;
-        /* height: 190px; */
-    }
+    main section#como-contratar #video-contratar { width: 470px; }
     main section#como-contratar #video-contratar iframe  {
         width: 470px;
         height: 190px;
     }
-    main section#como-contratar #video-contratar p {
-        display: block;
-    }
+    main section#como-contratar #video-contratar p { display: block; }
     /* ANTES E DEPOIS */
-    main section#antes-depois figure img {
-        width: 95%;
+    main section#antes-depois figure img { width: 95%; }
+    /* img-profissional */
+    
+    main section.texto-informativo figure img {
+        width: 650px !important;
+        margin: 50px auto;
+    }
+    main section.texto-informativo div a {
+        width: 650px;
+    }
+    #frm-orcamento h2 {
+        /* font-family: 'blowbrush'; */
+        font-size: 3rem !important;
+        font-weight: 100;
+        color: #595958;
+        margin: 20px 0;
+        
+    }
+}
+
+@media screen and (min-width: 1444px) {
+    #container{
+        max-width: 1444px;
+    }
+
+    /* BANNER */
+    main section#banner figure {
+        width: 100%;
+        height: auto;
+    }
+    main section#banner figure img {
+        width: 100%;
+        height: 650px;
+    }
+
+
+    /* COMO CONTRATAR */
+    main section#como-contratar article {
+        width: 48%;
+        height: 190px;
+        padding: 15px 15px;
+    }
+    main section#como-contratar #video-contratar { width: 48%; }
+    main section#como-contratar #video-contratar iframe  {
+        width: 100%;
+        height: 350px;
     }
 }
