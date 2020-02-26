@@ -16,14 +16,19 @@ function scrollToPosition(to) {
 	// window.scroll({
 	// top: to,
 	// behavior: "smooth",
-	// })
+  // })
+  if ( window.screen.width < 992 ) {
+    console.log(document.querySelector('header label').click())
+    
+  }
   smoothScrollTo(0, to);
 }
 
 function scrollToIdOnClick(event) {
 	event.preventDefault();
-	const to = getScrollTopByHref(event.currentTarget)- 80;
-	scrollToPosition(to);
+	const to = getScrollTopByHref(event.currentTarget);//- 80
+  scrollToPosition(to);
+  
 }
 
 

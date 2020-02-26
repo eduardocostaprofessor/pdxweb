@@ -1048,11 +1048,9 @@ footer p em span {
         width: 650px;
     }
     #frm-orcamento h2 {
-        /* font-family: 'blowbrush'; */
-        font-size: 3rem !important;
+        font-size: 2rem !important;
         font-weight: 100;
         color: #333;
-        margin: 20px 0;
     }
 
     /* EBOOK */
