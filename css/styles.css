@@ -197,12 +197,17 @@ main section#trabalhos, main section#depoimentos {
     color: #333;
     padding: 10px;
 }
+main section#trabalhos, h2 {
+    color: #333;
+}
 main section .carousel {
     padding: 15px 0 0 0 ;
-    display: flex;
     width: 80%;
     margin: 0 auto;
-    justify-content: center;
+}
+main section .carousel img{
+    width: 100%;
+    padding: 0 5px;
 }
 main section#trabalhos .slick-slide  {
     display: flex!important;
@@ -809,6 +814,27 @@ footer p em span {
         height: 175px;
         /* padding: 15px 15px; */
     }
+
+    /* **************** SLIDE SHOW ******************* */
+
+    main section .carousel {
+        width: 83%;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 25px;
+        opacity: 1;
+        color: cyan;
+    }
+
+    main section#depoimentos .carousel {
+        width: 45%;
+    }
+    main section#depoimentos .slick-next {
+        right: -165px;
+    }
+    main section#depoimentos .slick-prev {
+        left: -165px;
+    }
     main section#como-contratar article h2 {
         font-size: 1.3rem;
     }
@@ -851,8 +877,9 @@ footer p em span {
     main section#antes-depois div {
         width: 50%;
     }
-    main section#antes-depois>img {
-        height: 100px;
+    main section#antes-depois figure img {
+        width: 95%;
+        height: 320px;
         margin-top: 20px;
     }
     /* TEXTOS INFORMATIVOS */
