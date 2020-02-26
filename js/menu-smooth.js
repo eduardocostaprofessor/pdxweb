@@ -1,10 +1,13 @@
 /**************** EFEITO SMOOTH ******************/
-// Identificar o clique no menu
-// Verificar o item que foi clicado e fazer referência com o alvo
-// Verificar a distância entre o alvo e o topo
-// Animar o scroll até o alvo
+/* referência: https://www.youtube.com/watch?v=tzbpAqb2Wjc&list=PL9CORE-sK1iRb_jYpz2kaadaGaZ_-PDcg&index=2&t=0s
+ * Adaptado de última hora para Paradoxo Grafite http://paradoxografite.com.br/
+ * Por Eduardo Costa https://github.com/eduardocostaprofessor
+*/
 
 const menuItems = document.querySelectorAll('header nav a[href^="#"]');
+document.querySelector('#go-top').addEventListener('click', scrollToIdOnClick)
+
+let mostra = true
 
 function getScrollTopByHref(element) {
 	const id = element.getAttribute('href');
@@ -18,11 +21,31 @@ function scrollToPosition(to) {
 	// behavior: "smooth",
   // })
   if ( window.screen.width < 992 ) {
-    console.log(document.querySelector('header label').click())
+    
+    let navPosition = document.querySelector('nav').offsetLeft
+    if (navPosition === 0) {
+      document.querySelector('header label').click()
+    }
+    
     
   }
   smoothScrollTo(0, to);
+  
+  setTimeout(function () {
+    
+    mostraEscondeIcone()
+  }, 500)
+
 }
+
+function mostraEscondeIcone() {
+  const el = document.querySelector('#go-top')
+  
+  el.style.opacity = mostra ? 1 : 0
+  mostra = !mostra
+  
+}
+
 
 function scrollToIdOnClick(event) {
 	event.preventDefault();
@@ -30,8 +53,6 @@ function scrollToIdOnClick(event) {
   scrollToPosition(to);
   
 }
-
-
 
 // Caso deseje suporte a browsers antigos / que não suportam scroll smooth nativo
 /**
