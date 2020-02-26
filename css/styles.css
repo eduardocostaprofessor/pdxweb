@@ -896,7 +896,7 @@ footer p em span {
         display: flex;
         /* flex-direction: row; */
         flex-wrap: wrap;
-        justify-content: space-between !important;
+        justify-content: space-around;
         /* border: 2px solid purple; */
         margin-top: 40px;
     }
@@ -906,19 +906,15 @@ footer p em span {
     main section#antes-depois div figure img {
         width: 100%;
     }
-<<<<<<< HEAD
+
     main section#antes-depois figure img {
         width: 95%;
         height: 320px;
-=======
-
-    main section#antes-depois div figure img:first-of-type{
-        margin-right: 5%;
     }
+   
     
     main section#antes-depois>img {
         height: 100px;
->>>>>>> cf6083e4a8075fd69c663693dc5628df780ee4ea
         margin-top: 20px;
     }
     /* TEXTOS INFORMATIVOS */
@@ -986,11 +982,6 @@ footer p em span {
     }
     main section#orcamento form textarea {
         font-size: 1.3rem;
-    }
-    
-    main section#antes-depois{
-        justify-content: center;
-     
     }
     main section#antes-depois img#gostou-vantagens {
         width: 90%;
@@ -1097,7 +1088,6 @@ footer p em span {
 
     /* EBOOK */
     main section#ebook {
-        
         padding-bottom: 200px;
         background-image: url('../assets/imagens-corpo-do-site/ebook-background.jpg') ;
         background-size: 100% 100%;
