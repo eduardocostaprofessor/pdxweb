@@ -7,43 +7,47 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* color: black; */
     color: #333;
-    /* background: #f2f2f2; */
     font-size: 16px;
 }
-
+#topo{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    color: #333;
+    font-size: 2rem;
+    transform: rotate(90deg);
+    
+}
+#go-top {
+    opacity: 0;
+    transition: opacity .6s;
+}
 /*************** MOBILE ***************/
 
 /* HEADER */
-
+#link-ligue{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+}
 header {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    /* height: 57px; */
-    padding: 20px 10px;
+    padding: 15px 10px;
 }
 
 /* LOGOTIPO */
-
-/* #logotipo {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-
-#logotipo span {
-    font-family: Arial, sans-serif;
-    font-weight: 100;
-} */
 header img {
-    width: 160px;
+    width: 180px;
+    margin-top: 5px;
 }
+
 header label i {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #666666;
 }
 
@@ -117,12 +121,12 @@ main section#banner {
 
 main section#banner figure {
     position: relative;
-    width: 304px;
+    width: 100%;
     height: 171px;
 }
 
 main section#banner figure img {
-    width: 304px;
+    width: 100%;
     height: 171px;
     box-shadow: 0px 0px 3px rgb(51, 51, 51, .6);
 }
@@ -167,11 +171,16 @@ main section#como-contratar article {
     /* border-radius: 10px; */
     box-shadow: 0px 0px 3px rgba(0, 0, 0, .6);
 }
-
+main section#como-contratar iframe {
+    width: 100%;
+    height: 175px;
+}
 main section#como-contratar article h2 {
     font-size: 1rem;
     font-weight: normal;
 }
+
+
 
 main section#como-contratar article p {
     font-size: 0.9rem;
@@ -306,15 +315,12 @@ main section#grafiteiro-profissional ul {
 
 /* **************** ANTES E DEPOIS ******************* */
 main section#antes-depois {
-    overflow: hidden;
     background-image: linear-gradient(to bottom, white, #eaeaea,#eaeaea, white);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 main section#antes-depois img#gostou-vantagens {
     width: 100%;
-    height: auto;
-    float: left;
 }
 
 
@@ -656,7 +662,7 @@ main section#orcamento form button {
 
 .mudarexto-orcamento {
     animation-name: mudarexto-orcamento;
-    animation-duration: .8s;
+    animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -770,12 +776,10 @@ footer p em span {
     header {
         padding: 20px 20px;
     }
-    header h1 {
-        font-size: 3.5rem;
-    }
+    
     /* LOGOTIPO */
-    #logotipo {
-        font-size: 2.5rem;
+    header img {
+        width: 350px;
     }
     header label i {
         font-size: 2.5rem;
@@ -784,7 +788,7 @@ footer p em span {
     /* MAIN */
     main {
         margin-top: 20px;
-        padding: 20px 20px;
+        /* padding: 20px 20px; */
     }
     /* Banner */
     main section#banner figure {
@@ -803,16 +807,36 @@ footer p em span {
         height: 80px;
         font-size: 5rem;
     }
+
+    /* COMO CONTRATAR - VÍDEOS */
     main section#como-contratar {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        height: 450px;
+        /* border: 2px solid purple; */
     }
+    main section#como-contratar #entenda {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 48%;
+        height: 100%;
+        /* border: 1px solid green; */
+    }
+    
     main section#como-contratar article {
-        width: 340px;
+        width: 100%;
         margin-bottom: 0;
         height: 175px;
-        /* padding: 15px 15px; */
+        /* border: 1px solid red; */
+    }
+    
+    main section#como-contratar  #entenda iframe {
+        height: 50%;
+        margin-top: 20px;
     }
 
     /* **************** SLIDE SHOW ******************* */
@@ -842,10 +866,10 @@ footer p em span {
         font-size: 1.1rem;
     }
     main section#como-contratar #video-contratar {
-        width: 340px;
+        width: 48%;
     }
     main section#como-contratar #video-contratar iframe {
-        width: 340px;
+        width: 100%;
         height: 175px;
         margin-top: 0;
     }
@@ -870,16 +894,31 @@ footer p em span {
     /* ANTES E DEPOIS */
     main section#antes-depois {
         display: flex;
+        /* flex-direction: row; */
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between !important;
+        /* border: 2px solid purple; */
         margin-top: 40px;
     }
     main section#antes-depois div {
-        width: 50%;
+        width: 45%;
     }
+    main section#antes-depois div figure img {
+        width: 100%;
+    }
+<<<<<<< HEAD
     main section#antes-depois figure img {
         width: 95%;
         height: 320px;
+=======
+
+    main section#antes-depois div figure img:first-of-type{
+        margin-right: 5%;
+    }
+    
+    main section#antes-depois>img {
+        height: 100px;
+>>>>>>> cf6083e4a8075fd69c663693dc5628df780ee4ea
         margin-top: 20px;
     }
     /* TEXTOS INFORMATIVOS */
@@ -887,7 +926,7 @@ footer p em span {
         font-size: 1.3rem;
     }
     main section.texto-informativo figure img {
-        width: 350px;
+        /* width: 350px; */
         margin: 50px auto;
     }
     /* EBOOK FORM */
@@ -948,6 +987,17 @@ footer p em span {
     main section#orcamento form textarea {
         font-size: 1.3rem;
     }
+    
+    main section#antes-depois{
+        justify-content: center;
+     
+    }
+    main section#antes-depois img#gostou-vantagens {
+        width: 90%;
+        height: 200px; 
+        margin-left: calc(50% - 45%);
+     
+    }
 }
 
 /* DESKTOP */
@@ -997,6 +1047,11 @@ footer p em span {
     header nav a:hover {
         color: cyan;
     }
+    
+    main {
+        padding: 0;
+        /* margin-top: 20px; */
+    }
     /* BANNER */
     main section#banner figure {
         width: 100%;
@@ -1035,13 +1090,12 @@ footer p em span {
         width: 650px;
     }
     #frm-orcamento h2 {
-        /* font-family: 'blowbrush'; */
-        font-size: 3rem !important;
+        font-size: 2rem !important;
         font-weight: 100;
         color: #333;
-        margin: 20px 0;
     }
 
+    /* EBOOK */
     main section#ebook {
         
         padding-bottom: 200px;
@@ -1077,7 +1131,14 @@ footer p em span {
     main section#ebook figure {
         display: none;
     }
-    /* EBOOK */
+
+
+    main section#antes-depois img#gostou-vantagens {
+        width: 100%;
+        height: 300px; 
+        margin: 0;
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 1444px) {
@@ -1100,13 +1161,27 @@ footer p em span {
         height: 650px;
     }
     /* COMO CONTRATAR */
-    main section#como-contratar article {
+    /* main section#como-contratar article {
         width: 48%;
         height: 190px;
         padding: 15px 15px;
+    } */
+    
+    main section#como-contratar {
+        height: 600px;
     }
     main section#como-contratar #video-contratar {
         width: 48%;
+    }
+
+    main section#como-contratar #entenda article {
+        width: 100%;
+        /* height: 350px; */
+    }
+    main section#como-contratar #entenda iframe {
+        height: 100%;
+        height: 350px;
+        margin-top: 20px;
     }
     main section#como-contratar #video-contratar iframe {
         width: 100%;
