@@ -246,7 +246,7 @@ main section#trabalhos .slick-dots li.slick-active button:before{
 }
 main section#trabalhos a#galeria, main section#trabalhos a#grafiteorcamento  {
     display: inline-block;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 10px;
     padding: 20px;
     font-size: 1.2rem;

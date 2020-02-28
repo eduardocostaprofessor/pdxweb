@@ -6,6 +6,7 @@
 
 const menuItems = document.querySelectorAll('header nav a[href^="#"]');
 document.querySelector('#go-top').addEventListener('click', scrollToIdOnClick)
+document.querySelector('#grafiteorcamento').addEventListener('click', scrollToIdOnClick)
 
 let mostra = true
 
