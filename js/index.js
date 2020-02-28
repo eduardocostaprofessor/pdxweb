@@ -1,3 +1,4 @@
+
 $('.carousel').slick({
     dots: true,
     infinite: true,
@@ -33,3 +34,7 @@ $('.carousel').slick({
 
 ]
 });
+
+const viewer = new Viewer(document.getElementById('images'),{
+
+})

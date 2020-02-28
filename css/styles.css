@@ -215,8 +215,14 @@ main section .carousel {
     margin: 0 auto;
 }
 main section .carousel img{
-    width: 100%;
+    width: 90%;
+    height: 100%;
     padding: 0 5px;
+}
+.viewer-toolbar>ul>li:before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main section#trabalhos .slick-slide  {
     display: flex!important;
@@ -232,6 +238,11 @@ main section#trabalhos .slick-dots li.slick-active button:before{
     opacity: 0.85;
     font-size: 8px;
 } 
+.slick-prev:before, .slick-next:before {
+    font-size: 25px;
+    opacity: 1;
+    color: cyan;
+}
 main section#trabalhos a#galeria, main section#trabalhos a#grafiteorcamento  {
     display: inline-block;
     width: 100%;
@@ -844,12 +855,6 @@ footer p em span {
     main section .carousel {
         width: 83%;
     }
-    .slick-prev:before, .slick-next:before {
-        font-size: 25px;
-        opacity: 1;
-        color: cyan;
-    }
-
     main section#depoimentos .carousel {
         width: 45%;
     }
