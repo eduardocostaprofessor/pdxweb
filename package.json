@@ -1,0 +1,24 @@
+{
+  "name": "pdxweb",
+  "version": "1.0.0",
+  "description": "Anbiente de Homologação PDX web",
+  "main": "index.js",
+  "dependencies": {
+    "jQuery": "^1.7.4",
+    "viewerjs": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardocostaprofessor/pdxweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardocostaprofessor/pdxweb/issues"
+  },
+  "homepage": "https://github.com/eduardocostaprofessor/pdxweb#readme"
+}
