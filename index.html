@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">
+    <link rel="stylesheet" href="./node_modules/viewerjs/dist/viewer.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script src="./node_modules/viewerjs/dist/viewer.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -74,14 +76,14 @@
             <section id="trabalhos">
                 <h2>Confira nossos trabalhos</h2>
                 <a href="#orcamento" id="galeria">Galeria de fotos</a>
-                <div class="carousel">
-                    <div><img src="https://i.imgur.com/3aIutJi.png" alt="js" /></div>
-                    <div><img src="https://i.imgur.com/rWtGeQ0.png" alt="java" /></div>
-                    <div><img src="https://i.imgur.com/8946bSF.png" alt="python" /></div>
-                    <div><img src="https://i.imgur.com/9Hc7hjb.png" alt="kotlin" /></div>
-                    <div><img src="https://i.imgur.com/uZDEpjX.png" alt="scala" /></div>
-                    <div><img src="https://i.imgur.com/eQoyQjy.png" alt="C#" /></div>
-                </div>
+                    <ul id="images" class="carousel">
+                        <li><img id="fist-image" src="./images/veja-grafites-3D/Grafite de carro.jpg" alt="java"/></li>
+                        <li><img src="./images/veja-grafites-3D/grafite de paisagem.jpg" alt="python" /></li>
+                        <li><img src="./images/veja-grafites-3D/Grafite do Chaves.jpg" alt="kotlin" /></li>
+                        <li><img src="./images/veja-grafites-3D/grafite em restaurante.jpg" alt="scala" /></li>
+                        <li><img src="./images/veja-grafites-3D/Grafite em ótica paradoxo grafite.jpg" alt="C#" /></li>
+                    </ul>
+
                 <a href="#orcamento" id="grafites">Veja Grafites 3D</a>
                 <a href="#orcamento" id="grafiteorcamento">Solicitar um orçamento</a>
             </section>

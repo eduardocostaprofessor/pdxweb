@@ -207,12 +207,23 @@ main section#trabalhos, main section#depoimentos {
     color: #333;
     padding: 10px;
 }
+main section#trabalhos, h2 {
+    color: #333;
+}
 main section .carousel {
     padding: 15px 0 0 0 ;
-    display: flex;
     width: 80%;
     margin: 0 auto;
+}
+main section .carousel img{
+    width: 90%;
+    height: 100%;
+    padding: 0 5px;
+}
+.viewer-toolbar>ul>li:before {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 main section#trabalhos .slick-slide  {
     display: flex!important;
@@ -228,6 +239,11 @@ main section#trabalhos .slick-dots li.slick-active button:before{
     opacity: 0.85;
     font-size: 8px;
 } 
+.slick-prev:before, .slick-next:before {
+    font-size: 25px;
+    opacity: 1;
+    color: cyan;
+}
 main section#trabalhos a#galeria, main section#trabalhos a#grafiteorcamento  {
     display: inline-block;
     width: 100%;
@@ -834,6 +850,21 @@ footer p em span {
         height: 50%;
         margin-top: 20px;
     }
+
+    /* **************** SLIDE SHOW ******************* */
+
+    main section .carousel {
+        width: 83%;
+    }
+    main section#depoimentos .carousel {
+        width: 45%;
+    }
+    main section#depoimentos .slick-next {
+        right: -165px;
+    }
+    main section#depoimentos .slick-prev {
+        left: -165px;
+    }
     main section#como-contratar article h2 {
         font-size: 1.3rem;
     }
@@ -871,7 +902,7 @@ footer p em span {
         display: flex;
         /* flex-direction: row; */
         flex-wrap: wrap;
-        justify-content: space-between !important;
+        justify-content: space-around;
         /* border: 2px solid purple; */
         margin-top: 40px;
     }
@@ -882,9 +913,11 @@ footer p em span {
         width: 100%;
     }
 
-    main section#antes-depois div figure img:first-of-type{
-        margin-right: 5%;
+    main section#antes-depois figure img {
+        width: 95%;
+        height: 320px;
     }
+   
     
     main section#antes-depois>img {
         height: 100px;
@@ -955,11 +988,6 @@ footer p em span {
     }
     main section#orcamento form textarea {
         font-size: 1.3rem;
-    }
-    
-    main section#antes-depois{
-        justify-content: center;
-     
     }
     main section#antes-depois img#gostou-vantagens {
         width: 90%;
@@ -1066,7 +1094,6 @@ footer p em span {
 
     /* EBOOK */
     main section#ebook {
-        
         padding-bottom: 200px;
         background-image: url('../assets/imagens-corpo-do-site/ebook-background.jpg') ;
         background-size: 100% 100%;

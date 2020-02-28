@@ -1,10 +1,11 @@
+
 $('.carousel').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 1000,
     fade:false,
     slidesToShow: 1,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive:[
     {
         breakpoint: 1024,
@@ -33,3 +34,7 @@ $('.carousel').slick({
 
 ]
 });
+
+const viewer = new Viewer(document.getElementById('images'),{
+
+})
